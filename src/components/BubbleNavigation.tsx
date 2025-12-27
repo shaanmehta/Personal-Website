@@ -21,7 +21,10 @@ const BubbleNavigation = ({ currentPage, onNavigate, isCompact = false }: Bubble
   const [expandingBubble, setExpandingBubble] = useState<string | null>(null);
 
   const handleBubbleClick = (pageId: string) => {
-    if (pageId === currentPage) return;
+    if (pageId === currentPage) {
+      window.location.reload();
+      return;
+    }
     setExpandingBubble(pageId);
     setTimeout(() => {
       onNavigate(pageId);
@@ -58,7 +61,7 @@ const BubbleNavigation = ({ currentPage, onNavigate, isCompact = false }: Bubble
       <motion.nav
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="fixed top-6 left-1/2 -translate-x-1/2 z-50 flex items-center gap-3 px-6 py-3 rounded-full glass-card border border-primary/30"
+        className="sticky top-0 z-50 flex items-center justify-center gap-4 px-6 py-4 bg-background/80 backdrop-blur-md border-b border-primary/20"
       >
         {navItems.map((item, index) => {
           const Icon = item.icon;
@@ -68,34 +71,26 @@ const BubbleNavigation = ({ currentPage, onNavigate, isCompact = false }: Bubble
             <motion.button
               key={item.id}
               onClick={() => handleBubbleClick(item.id)}
-              className={`relative p-3 rounded-full transition-all duration-300 ${
+              className={`relative flex flex-col items-center gap-1 px-4 py-2 rounded-lg transition-all duration-300 ${
                 isActive 
                   ? 'bg-primary/20 text-primary' 
                   : 'text-muted-foreground hover:text-primary hover:bg-primary/10'
               }`}
-              whileHover={{ scale: 1.1 }}
+              whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.05 }}
             >
               <Icon className="w-5 h-5" />
+              <span className="text-xs font-mono">{item.label}</span>
               {isActive && (
                 <motion.div
                   layoutId="activeBubble"
-                  className="absolute inset-0 rounded-full border border-primary animate-glow-pulse"
+                  className="absolute inset-0 rounded-lg border border-primary animate-glow-pulse"
                   transition={{ type: 'spring', stiffness: 300, damping: 30 }}
                 />
               )}
-              
-              {/* Tooltip */}
-              <motion.span
-                initial={{ opacity: 0, y: 10 }}
-                whileHover={{ opacity: 1, y: 0 }}
-                className="absolute -bottom-8 left-1/2 -translate-x-1/2 text-xs font-mono text-primary whitespace-nowrap"
-              >
-                {item.label}
-              </motion.span>
             </motion.button>
           );
         })}

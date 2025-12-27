@@ -55,7 +55,7 @@ const TypingText = ({
           key={index}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className="flex items-center"
+          className="flex items-center justify-center"
         >
           <span className="text-glow">{line}</span>
           {index === currentLineIndex && isTyping && (
