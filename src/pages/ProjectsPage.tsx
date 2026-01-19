@@ -19,7 +19,7 @@ interface ProjectsPageProps {
 const projects = [
   {
     id: 1,
-    title: 'AI Mock Interviewer',
+    title: 'InteReviewAI',
     description: 'Mock interview robot that simulates realistic job interviews and gives intelligent feedback and scoring.',
     image: MockInterviewImg,
     githubUrl: 'https://github.com/shaanmehta/InteReviewAI',
