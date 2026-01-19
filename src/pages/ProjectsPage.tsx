@@ -22,7 +22,7 @@ const projects = [
     title: 'AI Mock Interviewer',
     description: 'Mock interview robot that simulates realistic job interviews and gives intelligent feedback and scoring.',
     image: MockInterviewImg,
-    githubUrl: 'https://github.com/shaanmehta/AI-Mock-Interviewer',
+    githubUrl: 'https://github.com/shaanmehta/InteReviewAI',
     tags: ['Voice/Facial Recognition', 'Position-specific questions', 'OpenAI API']
   },
   {
