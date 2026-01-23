@@ -18,7 +18,7 @@ const skillCategories = [
     color: 'from-cyan-500/20 to-blue-500/20',
     borderColor: 'border-cyan-500/40 hover:border-cyan-500/70',
     iconColor: 'text-cyan-400',
-    skills: ['C', 'C++', 'Java', 'Python', 'MATLAB', 'ROS']
+    skills: ['C','C++','Python','MATLAB','Java', 'Git', 'Excel']
   },
   {
     id: 'mechanical',
@@ -27,7 +27,7 @@ const skillCategories = [
     color: 'from-orange-500/20 to-red-500/20',
     borderColor: 'border-orange-500/40 hover:border-orange-500/70',
     iconColor: 'text-orange-400',
-    skills: ['SolidWorks', 'AutoCAD', '3D Printing', 'VEX Robotics']
+    skills: ['SolidWorks','Fusion 360','AutoCAD', 'GD&T','3D Printing', 'VEX Robotics']
   },
   {
     id: 'electrical',
@@ -36,7 +36,7 @@ const skillCategories = [
     color: 'from-yellow-500/20 to-green-500/20',
     borderColor: 'border-yellow-500/40 hover:border-yellow-500/70',
     iconColor: 'text-yellow-400',
-    skills: ['Raspberry Pi', 'VESC', 'DSP', 'Altium Designer', 'ESP32']
+    skills: ['DSP','Raspberry Pi','VESC', 'ESP32','Arduino','UART']
   }
 ];
 
