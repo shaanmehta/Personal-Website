@@ -12,8 +12,18 @@ interface ExperiencePageProps {
 
 // Sorted by start date (most recent first)
 const experiences = [
+
   {
     id: 1,
+    title: 'Software Engineer',
+    company: 'WATonomous',
+    period: 'Jan 2026 - Present',
+    description: 'Developing humanoid robots and training simulated systems',
+    skills: ['ROS2', 'Isaac Sim', 'Unity']
+  },
+  
+  {
+    id: 2,
     title: 'Firmware Engineer',
     company: 'Electrium Mobility',
     period: 'Sep 2025 - Dec 2025',
@@ -21,7 +31,7 @@ const experiences = [
     skills: ['Embedded C', 'ESP32', 'VESC Tool']
   },
   {
-    id: 2,
+    id: 3,
     title: 'Software Lead',
     company: 'Turner Fenton Rocketry Association',
     period: 'Nov 2024 - June 2025',
@@ -29,7 +39,7 @@ const experiences = [
     skills: ['Raspberry Pi', 'Arduino Uno', 'SolidWorks', 'C++']
   },
   {
-    id: 3,
+    id: 4,
     title: 'AI Researcher',
     company: 'Roaring Cubs Collective',
     period: 'Oct 2024 - Dec 2024',
@@ -37,7 +47,7 @@ const experiences = [
     skills: ['CNNs', 'Adversarial Training', 'Cybersecurity']
   },
   {
-    id: 4,
+    id: 5,
     title: 'Aquatics Instructor',
     company: 'City of Brampton',
     period: 'Jul 2023 - Apr 2025',
@@ -46,12 +56,12 @@ const experiences = [
   },
 
   {
-    id: 5,
+    id: 6,
     title: 'VEX IQ Team Captain',
     company: 'Kraftwerx Robotics',
     period: 'Sep 2017 - Mar 2019',
     description: 'Team 555A Gladiators: 1st in Canada and 4th internationally at the 2018 VEX IQ World Championship',
-    skills: ['VEX Robotics', 'RobotC', 'Teamwork']
+    skills: ['VEX Robotics', 'RobotC']
   }
 ];
 
