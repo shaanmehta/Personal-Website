@@ -82,7 +82,7 @@ const HomePage = ({
       }}>
           
           
-          <TypingText lines={["Shaan Mehta", "Mechatronics Engineering student at the University of Waterloo"]} className="text-2xl md:text-4xl lg:text-5xl text-foreground leading-relaxed text-center" typingSpeed={150} delayBetweenLines={1000} />
+          <TypingText lines={["Shaan Mehta", "Mechatronics Engineering student at the University of Waterloo"]} className="text-2xl md:text-4xl lg:text-5xl text-foreground leading-relaxed text-center" typingSpeed={50} delayBetweenLines={1000} />
         </motion.div>
 
         {/* Navigation bubbles */}
