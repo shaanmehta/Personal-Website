@@ -12,31 +12,31 @@ interface SkillsPageProps {
 
 const skillCategories = [
   {
-    id: 'software',
-    title: 'Software',
+    id: 'Languages',
+    title: 'Languages',
     icon: Code,
     color: 'from-cyan-500/20 to-blue-500/20',
     borderColor: 'border-cyan-500/40 hover:border-cyan-500/70',
     iconColor: 'text-cyan-400',
-    skills: ['C','C++','Python','MATLAB','Java', 'Git', 'Excel']
+    skills: ['C++','C','Python','MATLAB','Java', 'TypeScript', 'JavaScript']
   },
   {
-    id: 'mechanical',
-    title: 'Mechanical',
+    id: 'Robotics/Simulation',
+    title: 'Robotics/Simulation',
     icon: Cog,
     color: 'from-orange-500/20 to-red-500/20',
     borderColor: 'border-orange-500/40 hover:border-orange-500/70',
     iconColor: 'text-orange-400',
-    skills: ['SolidWorks','Fusion 360','AutoCAD', 'GD&T','3D Printing', 'VEX Robotics']
+    skills: ['ROS2','Nav2','SolidWorks', 'Isaac Sim','Unity', 'Foxglove']
   },
   {
-    id: 'electrical',
-    title: 'Electrical',
+    id: 'Embedded',
+    title: 'Embedded',
     icon: Zap,
     color: 'from-yellow-500/20 to-green-500/20',
     borderColor: 'border-yellow-500/40 hover:border-yellow-500/70',
     iconColor: 'text-yellow-400',
-    skills: ['DSP','Raspberry Pi','VESC', 'ESP32','Arduino','UART']
+    skills: ['Raspberry Pi','VESC', 'ESP32','Arduino','UART', 'SPI', 'I2C']
   }
 ];
 
